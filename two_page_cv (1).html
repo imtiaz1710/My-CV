@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imtiaz Mehedi - Software Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: white;
+            font-size: 12px;
+        }
+        
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        .page-break {
+            page-break-before: always;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 15px;
+        }
+        
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 11px;
+            color: #666;
+        }
+        
+        .contact-info a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+            margin-top: 20px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #2c3e50;
+            border-bottom: 1px solid #3498db;
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        .about-text {
+            font-size: 12px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        
+        .skills-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .skill-item {
+            font-size: 12px;
+            display: flex;
+            align-items: flex-start;
+            padding: 2px 0;
+        }
+        
+        .skill-category {
+            font-weight: bold;
+            min-width: 140px;
+            color: #2980b9;
+        }
+        
+        .skill-details {
+            flex: 1;
+            line-height: 1.4;
+        }
+        
+        .experience-item {
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+        
+        .company-role {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 12px;
+            margin-bottom: 3px;
+        }
+        
+        .duration {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+        
+        .project-name {
+            font-weight: bold;
+            color: #2980b9;
+            margin-bottom: 3px;
+        }
+        
+        .tech-stack {
+            margin-left: 15px;
+            margin-bottom: 8px;
+        }
+        
+        .contributions {
+            margin-left: 15px;
+        }
+        
+        .project-item {
+            margin-bottom: 18px;
+            font-size: 12px;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            color: #2980b9;
+            margin-bottom: 3px;
+        }
+        
+        .project-link {
+            color: #2980b9;
+            text-decoration: none;
+            font-size: 10px;
+        }
+        
+        .activities-item {
+            margin-bottom: 10px;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        
+        .education-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 10px;
+        }
+        
+        .education-table th,
+        .education-table td {
+            border: 1px solid #ddd;
+            padding: 6px;
+            text-align: left;
+        }
+        
+        .education-table th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        li {
+            margin-bottom: 6px;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .page {
+                width: 210mm;
+                height: 297mm;
+                margin: 0;
+                border: none;
+                padding: 15mm;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: avoid;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+        }
+        
+        @page {
+            size: A4;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page 1 -->
+    <div class="page">
+        <div class="header">
+            <div class="name">IMTIAZ ZAMAN MEHEDI</div>
+            <div class="contact-info">
+                <span>📧 <a href="mailto:imtiaz.mehedi.iubat@gmail.com">imtiaz.mehedi.iubat@gmail.com</a></span>
+                <span>📱 +8801521435113, +8801798629802</span>
+                <span>🔗 <a href="https://www.linkedin.com/in/imtiaz-mehedi-2b10b21a0/">LinkedIn</a></span>
+                <span>🔗 <a href="https://github.com/imtiaz1710">GitHub</a></span>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- Left Column -->
+            <div class="left-column">
+                <div class="section">
+                    <div class="section-title">About Me</div>
+                    <div class="about-text">
+                        I'm a Software Engineer with around <strong>4 years</strong> of professional experience in C#, .Net 8 and Angular and Azure. I enjoy building scalable, efficient, and modern software systems.
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Skills</div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-category">Language & Framework:</div>
+                            <div class="skill-details">C#, NET 8.0 and Angular</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-category">Database Related:</div>
+                            <div class="skill-details">ADO. Net, SQL, TSQL, MongoDb</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-category">ORM:</div>
+                            <div class="skill-details">Entity Framework Core, Dapper, PetaPoco</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-category">Pattern & Architecture:</div>
+                            <div class="skill-details">Clean ,n-tier and Vertical Slice Architecture, MVC, Singleton, Builder, Prototype, Factory, Repository, Unit of Work, Mediator, CQRS</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-category">OOD:</div>
+                            <div class="skill-details">SOLID</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-category">Microservice & Cloud:</div>
+                            <div class="skill-details">RabbitMQ, Azure storage, Azure Service Bus,Ocelot API Gateway, GRPC, SignalR</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-category">More On C#:</div>
+                            <div class="skill-details">Reflection, Delegate, Event, Thread, Generic, Linq</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-category">Auth:</div>
+                            <div class="skill-details">Cookie and Token based Authentication, JWT, Role-based access control</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-category">Deployment Tools:</div>
+                            <div class="skill-details">Docker and Docker Compose</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-category">More on .Net:</div>
+                            <div class="skill-details">Dependency Injection, Error Logging (Serilog), Validation (Fluent Validation), Worker Service, Mapper(Automapper)</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-category">Project management:</div>
+                            <div class="skill-details">Git, Jira, Trello, Azure Portal</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Personal Projects</div>
+                    <div class="project-item">
+                        <div class="project-title">Farm2Market</div>
+                        <div><a href="https://github.com/imtiaz1710/Farm2Market" class="project-link">https://github.com/imtiaz1710/Farm2Market</a></div>
+                        <div>Description: Practice Project For Learning Microservice. User can see product, add product to cart, Get latest discount and checkout from cart</div>
+                        <div><strong>Services:</strong></div>
+                        <ul>
+                            <li>Catalog Service: Applies: Vertical Slice Architecture, MediatR, CQRS, Mapster, FluentValidation, Marten, Carter, Docker, Docker Compose etc.</li>
+                            <li>Basket Service: Implement GRPC Client</li>
+                            <li>Discount Service:Implement GRPC Service</li>
+                            <li>Ordering Service: DDD, CQRS, Clean Architecture, MediatR, SQL Database</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-title">Mini ORM by ADO .Net and Reflection</div>
+                        <div><a href="https://github.com/imtiaz1710/MiniORM" class="project-link">https://github.com/imtiaz1710/MiniORM</a></div>
+                        <div>Description: An ORM with Insert, Update and Delete object (also nested object operation in Database</div>
+                        <div>Applies: - Reflection and Generic</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <div class="section">
+                    <div class="section-title">Professional Experience (4 Years)</div>
+                    
+                    <div class="experience-item">
+                        <div class="company-role">Seamlss - Software Developer</div>
+                        <div class="duration">(April 2025 - Present)</div>
+                        <div class="project-name">Seamlss App</div>
+                        <ul>
+                            <li>A client onboarding APP, use more than <strong>100 Organizations</strong> in the world to onboard their clients</li>
+                            <li>Reduced client onboarding time for Organizations and use smart features for handling onboard</li>
+                            <li>Tech stack: .net 8, MVC, MSSQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="company-role">Surbana Jurong - Software Engineer</div>
+                        <div class="duration">(October 2023 - April 2025)</div>
+                        
+                        <div class="project-name">CFEMS (Vendor: Singapore Land Transport Authority):</div>
+                        <div class="tech-stack"><strong>Technology:</strong> .Net 6, C# 10, Clean Architecture, MediatR, CQRS, Angular, MSSQL, Dapper, Entity Framework, MQTT Broker, SingleR,Fluent Validation, Refit, Serilog, Background Service and so on</div>
+                        <div class="contributions"><strong>Key Contributions:</strong> Background service performance improvement.Reduced about 80% of CPU Usage, Database Partition for big tables, 2FA Login, SSE and many features for Frontend and Backend</div>
+
+                        <div class="project-name">RAPID Portal(Vendor: Surbana Jurong):</div>
+                        <div class="tech-stack"><strong>Technology:</strong> .Net Core 3.1, n-tier Architecture, Power BI, Angular, MSSQL, Dapper, Refit, Serilog, Background Service and so on</div>
+                        <div class="contributions"><strong>Key Contributions:</strong> Implement Calendar API for Holiday and Weekend from Calendarific, Power BI Design POC, Implement Security Features, Global Error handler. SSE and many features for both Frontend and Backend.</div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="company-role">KAZ Software - Trainee and Associate Software Engineer</div>
+                        <div class="duration">(December 2021 - October 2023)</div>
+                        <div class="project-name">MIS Application (Vendor: Good Neighbors Bangladesh)</div>
+                        <div class="tech-stack"><strong>Technology:</strong> Angular, .Net 6, C# 10, Clean Architecture, MediatR, CQRS, MongoDb</div>
+                        <div class="contributions"><strong>Key Contributions:</strong> Both in Frontend And Backend</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="page page-break">
+        <div class="main-content">
+            <!-- Left Column -->
+            <div class="left-column">
+                <div class="section">
+                    <div class="section-title">Activities, Awards & Certifications</div>
+                    <div class="activities-item">Participated in <a href="https://codeforces.com/profile/Imtiaz1710"><strong>more than 68 contests</strong></a> of Codeforces and various online platforms</div>
+                    <div class="activities-item">Solved <a href="https://www.stopstalk.com/user/profile/imtiaz1710"><strong>more than 740 problems</strong></a> in various online platforms</div>
+                    <div class="activities-item"><strong>First</strong> in <a href="https://www.hackerrank.com/contests/miu-idpc/leaderboard">Intra Department Programming Contest of MIU, 2019</a> (Team: miu_idpc_9)</div>
+                    <div class="activities-item"><strong>Second</strong> in Inter University Programming Contest of MIU, 2020</div>
+                    <div class="activities-item"><a href="https://www.udemy.com/certificate/UC-825c7caf-f67a-4923-92bd-6ace45e416fa/"><strong>Completed Udemy Course</strong></a> on <strong>NET 8 Microservices: DDD, CQRS, Vertical/Clean Architecture</strong></div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <div class="section">
+                    <div class="section-title">Education</div>
+                    <table class="education-table">
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>Passing Year</th>
+                                <th>Institution Name</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bsc. in CSE</td>
+                                <td>2022</td>
+                                <td>Manarat International University</td>
+                                <td>3.57(Out of 4)</td>
+                            </tr>
+                            <tr>
+                                <td>HSC</td>
+                                <td>2016</td>
+                                <td>Safiuddin Sarker Academy and College</td>
+                                <td>4.67(Out of 5)</td>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>2014</td>
+                                <td>Safiuddin Sarker Academy and College</td>
+                                <td>5(Out of 5)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
